@@ -69,6 +69,7 @@ const config: PlaywrightTestConfig = {
       },
     }
 
+
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
