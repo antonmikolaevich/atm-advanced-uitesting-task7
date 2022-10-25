@@ -1,0 +1,53 @@
+{
+  "cookies": [
+    {
+      "name": "_ga",
+      "value": "GA1.1.877601036.1666713282",
+      "domain": "localhost",
+      "path": "/",
+      "expires": 1701273282.170366,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.1.1330172797.1666713282",
+      "domain": "localhost",
+      "path": "/",
+      "expires": 1666799682,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gat",
+      "value": "1",
+      "domain": "localhost",
+      "path": "/",
+      "expires": 1666713342,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "http://localhost:8080",
+      "localStorage": [
+        {
+          "name": "dashboard_type",
+          "value": "\"table\""
+        },
+        {
+          "name": "superadmin_settings",
+          "value": "{\"activeProject\":\"superadmin_personal\",\"lastPath\":\"/superadmin_personal/dashboard\"}"
+        },
+        {
+          "name": "token",
+          "value": "{\"type\":\"bearer\",\"value\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjY3OTk2ODMsInVzZXJfbmFtZSI6InN1cGVyYWRtaW4iLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOSVNUUkFUT1IiXSwianRpIjoiYjllZTdjYzktOWEyNC00NjJkLTk2MTktNmUyYmZiOGQwMmUxIiwiY2xpZW50X2lkIjoidWkiLCJzY29wZSI6WyJ1aSJdfQ.kQq8nWUUg5CTyPBd6u5HK-0Gje7s8dTzYcfoQUK8MlE\"}"
+        }
+      ]
+    }
+  ]
+}

@@ -4,8 +4,7 @@ import { expect } from '@playwright/test';
   
 test.describe("UI testing", () => {
   test.beforeEach(async ({loginPage, leftSideBar, dashboardPage, widgetPage }) => {
-    await loginPage.goto();
-    await loginPage.login();
+    await dashboardPage.goto();
     await leftSideBar.dashboardTab.click();
     await dashboardPage.dashboardName.isVisible();
     await dashboardPage.dashboardName.click();

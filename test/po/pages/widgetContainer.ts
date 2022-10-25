@@ -8,10 +8,13 @@ export class WidgetContainer extends Element{
 
     readonly headerSection: Locator;
 
+    readonly widgetHeaderName: Locator;
+
     constructor(locator: Locator){
         super(locator)
         this.resizeButton = this.rootEl.locator('.react-resizable-handle');
         this.legendSection = this.rootEl.locator('[class*="legend__content"]');
         this.headerSection = this.rootEl.locator('[class*="draggable-field"]');
+        this.widgetHeaderName = this.rootEl.locator('[class*="widget-header"] [class*="widget-name-block"]');
     }
 }

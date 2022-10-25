@@ -9,4 +9,8 @@ export class DashboardPage {
         this.page = page;
         this.dashboardName = this.page.locator("[class*='dashboard-table'] [href*='dashboard']", { hasText: 'DEMO DASHBOARD'});
     }
+
+    async goto() {
+        await this.page.goto('http://localhost:8080/ui/#superadmin_personal/dashboard');
+      }
 }
