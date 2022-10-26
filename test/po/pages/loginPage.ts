@@ -14,16 +14,19 @@ export class LoginPage{
 
     readonly api: Api;
 
-    constructor(page: Page){
+    readonly url: string;
+
+    constructor(page: Page, url = `${BASE_URL}`){
         this.page = page;
         this.emailField = this.page.locator("input[placeholder='Login']");
         this.passwordField = this.page.locator("input[placeholder='Password']");
         this.loginButton = this.page.locator("button[type='submit']");
         this.api = new Api(this.page);
+        this.url = url;
     }
 
     async login () {
-        await this.page.goto(`${BASE_URL}`);
+        await this.page.goto(this.url);
         await this.emailField.fill('superadmin');
         await this.passwordField.fill('erebus');
         await this.loginButton.click();
@@ -32,12 +35,12 @@ export class LoginPage{
           });
     }
 
-    async goto() {
-        await this.page.goto(`${BASE_URL}`);
+    async goto(url) {
+        await this.page.goto(url);
       }
 
     async loginPageMockingWidgets() {
-        await this.api.mockingWidgets(`${BASE_URL}/api/v1/superadmin_personal/dashboard/58`, responseBody);
+        await this.api.mockingWidgets(`/api/v1/superadmin_personal/dashboard/58`, responseBody);
     }  
 
 }

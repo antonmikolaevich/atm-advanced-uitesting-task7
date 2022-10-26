@@ -11,6 +11,6 @@ export class DashboardPage {
     }
 
     async goto() {
-        await this.page.goto('http://localhost:8080/ui/#superadmin_personal/dashboard');
+        await this.page.goto('/ui/#superadmin_personal/dashboard');
       }
 }

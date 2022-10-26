@@ -29,7 +29,7 @@ test('verify that resize elements inside widget', async ({widgetPage}) => {
     expect(thirdLegendSize?.width).toEqual(firstLegendSize?.width);
 })
 
-test('scroll into view', async ({widgetPage}) => {
+test.only('scroll into view', async ({widgetPage}) => {
     const footerSection = await widgetPage.footerSection;
     await footerSection.evaluate(elem => elem.scrollIntoView());
     await expect(footerSection).toBeEnabled();
