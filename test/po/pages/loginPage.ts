@@ -3,7 +3,7 @@ import { Api } from '../../api/api'
 import { responseBody } from "../../constant/constant";
 import { BASE_URL } from "../../constant/constant";
 
-export class LoginPage{
+export class LoginPage {
     readonly page: Page;
 
     readonly emailField: Locator;
@@ -16,7 +16,7 @@ export class LoginPage{
 
     readonly url: string;
 
-    constructor(page: Page, url = `${BASE_URL}`){
+    constructor(page: Page, url = `${BASE_URL}/ui/login`){
         this.page = page;
         this.emailField = this.page.locator("input[placeholder='Login']");
         this.passwordField = this.page.locator("input[placeholder='Password']");
@@ -35,7 +35,7 @@ export class LoginPage{
           });
     }
 
-    async goto(url) {
+    async goto(url: string) {
         await this.page.goto(url);
       }
 
