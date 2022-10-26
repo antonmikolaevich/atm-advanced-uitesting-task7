@@ -1,6 +1,7 @@
 import { Locator, Page } from "@playwright/test";
 import { Api } from '../../api/api'
 import { responseBody } from "../../constant/constant";
+import { BASE_URL } from "../../constant/constant";
 
 export class LoginPage{
     readonly page: Page;
@@ -22,7 +23,7 @@ export class LoginPage{
     }
 
     async login () {
-        await this.page.goto('http://localhost:8080/');
+        await this.page.goto(`${BASE_URL}`);
         await this.emailField.fill('superadmin');
         await this.passwordField.fill('erebus');
         await this.loginButton.click();
@@ -32,11 +33,11 @@ export class LoginPage{
     }
 
     async goto() {
-        await this.page.goto('http://localhost:8080/');
+        await this.page.goto(`${BASE_URL}`);
       }
 
     async loginPageMockingWidgets() {
-        await this.api.mockingWidgets("http://localhost:8080/api/v1/superadmin_personal/dashboard/58", responseBody);
+        await this.api.mockingWidgets(`${BASE_URL}/api/v1/superadmin_personal/dashboard/58`, responseBody);
     }  
 
 }
