@@ -1,0 +1,23 @@
+{
+  "name": "playwright-ui-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.epam.com/anton_rak/ui-testing-project.git"
+  },
+  "author": "Anton_Rak",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1",
+    "@types/mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "mocha": "^10.1.0",
+    "winston": "^3.8.2"
+  }
+}
