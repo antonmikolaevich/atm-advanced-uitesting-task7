@@ -19,7 +19,6 @@ git remote add origin https://git.epam.com/anton_rak/playwright-ui-testing.git
 git branch -M main
 git push -uf origin main
 ```
-
 ## Integrate with your tools
 
 - [ ] [Set up project integrations](https://git.epam.com/anton_rak/playwright-ui-testing/-/settings/integrations)
